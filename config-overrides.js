@@ -1,5 +1,4 @@
-const { override, addBabelPlugins } = require('customize-cra')
-const { addReactRefresh } = require('customize-cra-react-refresh')
+const {override, addBabelPlugins} = require('customize-cra')
 const plugin = require('@ui-devtools/tailwind/babel')
 
-module.exports = override(...addBabelPlugins(plugin), addReactRefresh())
+module.exports = override(...addBabelPlugins(plugin))
